@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Luciana Assis Psicóloga</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#">
+                <img class="logo" src="./assets/img/logo psi.png" alt="">
+            </a>
+            <span class="nome">Luciana Assis Psicóloga</span>
+        </div>
+        <nav class="menu" id="nav">
+            <button id='btn-mobile'>Menu</button>
+            <ul id="lista">
+                <li> <a href="#sobre">Sobre mim</a> </li>
+                <li> <a href="#contato">Contato</a> </li>
+                <li> <a href="#links">Instagram</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sobre" id="sobre">
+        <img src="./assets/img/luciana.jpg" alt="">
+        <article>
+            <h2 class="titulo">Sobre mim</h2>
+            <p>Iniciei a faculdade de  Psicologia em 2016, logo a princípio, escolhi a abordagem da Terapia Cognitiva Comportamental. 
+                Me formei em 2021 pela Universidade Federal Fluminense e atualmente atendo pacientes adultos de forma online. 
+                Meus estudos estão mais avançados para queixas que envolvem depressão e ansiedade.</p>
+        </article>
+    </section>
+
+    <aside class="container-botao">
+        <a class="botao" target="_blank" href="https://api.whatsapp.com/send?phone='+55022981827116'&text=Olá, estou procurando um psicólogo. Você pode me ajudar?">Enviar uma Mensagem no Whatsapp</a>
+    </aside>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form name="contato" action="#" method="post" data-netlify="true" data-netlify-recaptcha="true">
+            <div>
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label for="telefone">Telefone para contato com DDD</label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div class='recaptcha' data-netlify-recaptcha="true"></div>
+            <div class="enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>   
+
+    <footer id="links">
+        <section class="dados">
+            <address>
+                <div>
+                    <label for="">Endereço</label>
+                    <span>Campos dos Goytacazes</span>
+                </div>
+                <div>
+                    <label for="">Telefone</label>
+                    <span>(22) 98182-7116</span>
+                </div>
+                <div>
+                    <label for="">CRP</label>
+                    <span>129415127591</span>
+                </div>
+            </address>
+
+            <div class="links">
+                <a href="https://www.instagram.com/psi.lucianaassis/" target="_blank" class="link"><i class="fa fa-instagram"></i></a>
+                <a href="" class="link"><i class="fa fa-facebook"></i></a>
+                <a href="" class="link"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </section>
+        <div class="container-copy"><p class="copy">Desenvolvido com <div class="heart">❤</div> por Everton Gonçalves by Cod<span class="codever">Ever</span> Group. Copyright &copy 2021</p></div>
+        <script src="./assets/js/main.js"></script>
+    </footer>
+</body>
+</html>
