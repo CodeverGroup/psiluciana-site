@@ -214,6 +214,7 @@ img {
 @media (max-width: 447px) {
     .sobre {
         position: relative;
+        height: 100%;
         margin-top: 196px;
     }
 
