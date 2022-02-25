@@ -306,6 +306,24 @@ section img {
     font-family: 'Quicksand', sans-serif;
     height: 100px;
 }
+.container-message-alert {
+    display: none!important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-message-alert.active{
+    display: flex!important;
+}
+
+.message-alert {
+    color: #ff3333;
+}
+
+.alert {
+    border: 1px solid #ff4444!important;
+}
 
 .recaptcha {
     display: flex;
