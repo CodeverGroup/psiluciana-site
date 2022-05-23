@@ -267,10 +267,11 @@ section img {
     width: 100%;
     padding: 40px;
     color: #2b2b2b;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.7);
 }
 
 .container-ebook h1 {
+    font-size: 25pt;
     padding: 20px;
 }
 
@@ -283,6 +284,12 @@ section img {
 
 .container-ebook div a{
     color: #2b2b2b;
+    font-size: 18pt;
+}
+
+.container-ebook div a span{
+    color: #c01b1b;
+    font-size: 22pt;
 }
 
 .botao {
