@@ -38,7 +38,9 @@ header {
 
 .sticky {
     transition: 0.5s;
-    background-image: linear-gradient(45deg, #ff91ed, #49bcff);
+    background-color: rgba(200, 179, 240, 1);
+    box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+    /* background-image: linear-gradient(45deg, #ff91ed, #49bcff); */
 }
 
 header div {
@@ -149,7 +151,8 @@ header div {
 }
 
 .menu ul li {
-    /* width: 10rem; */
+    width: 12rem;
+    text-align: center;
     padding: 10px;
     border: 1px solid rgb(255, 170, 227);
 }
@@ -159,7 +162,6 @@ header div {
     border-radius: 5px;
     color: rgb(255, 170, 227);
 }
-
 
 .menu ul li a {
     border-radius: 5px;
@@ -255,6 +257,32 @@ section img {
     .container-botao {
         margin-top: 3rem;
     }
+}
+
+.container-ebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    color: #2b2b2b;
+    background-color: #fff;
+}
+
+.container-ebook h1 {
+    padding: 20px;
+}
+
+.container-ebook div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.container-ebook div a{
+    color: #2b2b2b;
 }
 
 .botao {
