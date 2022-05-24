@@ -2,6 +2,7 @@ const btn = document.getElementById("btn-mobile")
 const menuBtn1 = document.querySelector('.menu-buttom-1')
 const menuBtn2 = document.querySelector('.menu-buttom-2')
 const menuBtn3 = document.querySelector('.menu-buttom-3')
+const menuBtn4 = document.querySelector('.menu-buttom-4')
 
 const submit = document.querySelector('.submit')
 const form = document.getElementById('contato')
@@ -46,6 +47,13 @@ menuBtn2.addEventListener('click', () => {
 })
 
 menuBtn3.addEventListener('click', () => {
+    const nav = document.getElementById("nav")
+    if (nav.className.match('active')) {
+        nav.classList.remove('active')
+    }
+})
+
+menuBtn4.addEventListener('click', () => {
     const nav = document.getElementById("nav")
     if (nav.className.match('active')) {
         nav.classList.remove('active')
