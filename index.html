@@ -68,58 +68,51 @@
     <!-- Contato -->
     <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: url(https://img.freepik.com/fotos-gratis/mulher-de-negocios-que-fala-a-seu-psicologo_1098-1824.jpg?w=1380&t=st=1660484018~exp=1660484618~hmac=1fbb79c9f0bcca120811553ce877e44b0e23dcdff029a3a99df5b13a4529854f); background-size: cover;">
         <div class="container-grid p-4" style="background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 4px">
-            <div class="mx-2">
-                <h2>Veja aqui meu e-book sobre ansiedade</h2>
+            <div class="mx-2 p-4">
+                <article class="mb-2">
+                    <h2>Fale comigo</h2>
+                    <p class="h5">Entre em contato comigo e me informe como posso ajudá-lo(a). Ficarei feliz em ajudar de todas as maneiras que puder. Por favor, use o 
+                        formulário para me dizer como posso ajudá-lo(a), e como podemos promover nosso relacionamento.</p>
+                </article>
 
-                <p class="h5 mb-3">Esse e-book descreve brevemente as características da ansiedade, que é um tema bem relevante nos dias de hoje. Por isso,eu e minha amiga e parceira de 
-                    profissão <a href="https://www.instagram.com/psihellorainyrangel/" target="_blank" class="link-text">Hellorainy Rangel</a>, decidimos elaborar esse conteúdo com algumas 
-                    informações importantes sobre o tema para ajudar a esclarecer e responder diversas dúvidas sobre essa questão.</p>
+                <img src="./assets/img/contact.jpg" alt="Contato">
             </div>
 
             <form action="#" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="mx-2 p-2" id="formContact" style="width: 100%;">
-                <div class="form-floating mb-3">
-                    <input type="text" name="nome" class="form-control" id="nome">
-                    <label for="nome">Nome</label>
+                <div class="mb-3">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome aqui...">
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="text" name="telefone" class="form-control" id="telefone">
-                    <label for="telefone">Telefone</label>
+                <div class="mb-3">
+                    <label class="form-label" for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone aqui...">
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="email" name="email" class="form-control" id="email">
-                    <label for="email">e-Mail</label>
+                <div class="mb-3">
+                    <label class="form-label" for="email">e-Mail</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu email aqui...">
                 </div>
-                <div class="form-floating mb-3">
-                    <textarea name="mensagem" id="mensagem" class="form-control" rows="4"></textarea>
-                    <label for="mensagem">Mensagem</label>
+                <div class="mb-3">
+                    <label class="form-label" for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" class="form-control" id="mensagem" rows="4">Escreva sua mensagem aqui...</textarea>
                 </div>
 
-                <div class="form-floating mb-3">
+                <div class="mb-3">
                     <span class="message-alert">Existem campos em branco!</span>
                 </div>
 
-                <div class="form-floating mb-3" data-netlify-recaptcha="true"></div>
+                <div class="mb-3" data-netlify-recaptcha="true"></div>
 
-                <button class="btn btn-outline-pink" type="submit" style="width: 100%;">Enviar</button>
+                <button class="btn btn-pink" type="submit" style="width: 100%;">Enviar</button>
             </form>
         </div>
     </section>
 
     <footer id="links">
         <section class="dados">
-            <address>
-                <div>
-                    <label for="">Cidade: </label>
-                    <span>Campos dos Goytacazes/RJ</span>
-                </div>
-                <div>
-                    <label for="">Telefone: </label>
-                    <span>(22) 98182-7116</span>
-                </div>
-                <div>
-                    <label for="">CRP: </label>
-                    <span>05/67308</span>
-                </div>
+            <address class="m-2">
+                <p><span>Cidade:</span> Campos dos Goytacazes/RJ</p>
+                <p><span>Telefone:</span> (22) 98182-7116</p>
+                <p><span>CRP:</span> 05/67308</p>
             </address>
 
             <div class="links">
