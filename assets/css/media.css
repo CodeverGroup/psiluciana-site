@@ -9,6 +9,10 @@
         max-width: 540px;
         display: inherit;
     }
+
+    .container-grid {
+        max-width: 540px;
+    }
 }
 
 /* min-width: 768px */
@@ -19,8 +23,12 @@
     }
 
     .container-columns {
-        max-width: 540px;
+        max-width: 720px;
         display: inherit;
+    }
+
+    .container-grid {
+        max-width: 720px;
     }
 }
 
@@ -35,6 +43,10 @@
         max-width: 960px;
         display: flex;
     }
+
+    .container-grid {
+        max-width: 960px;
+    }
 }
 
 /* min-width: 1200px */
@@ -45,8 +57,12 @@
     }
 
     .container-columns {
-        max-width: 960px;
+        max-width: 1140px;
         display: flex;
+    }
+
+    .container-grid {
+        max-width: 1140px;
     }
 }
 
@@ -58,7 +74,11 @@
     }
 
     .container-columns {
-        max-width: 960px;
+        max-width: 1320px;
         display: flex;
+    }
+
+    .container-grid {
+        max-width: 1320px;
     }
 }

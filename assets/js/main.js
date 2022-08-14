@@ -5,7 +5,7 @@ const menuBtn3 = document.querySelector('.menu-buttom-3')
 const menuBtn4 = document.querySelector('.menu-buttom-4')
 
 const submit = document.querySelector('.submit')
-const form = document.getElementById('contato')
+const form = document.getElementById('formContact')
 const alerta = document.querySelector('.container-message-alert')
 
 submit.addEventListener('click', (e) => {
