@@ -58,7 +58,6 @@ label {
 input {
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color: fieldtext;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
@@ -68,10 +67,7 @@ input {
     display: inline-block;
     text-align: start;
     appearance: auto;
-    -webkit-rtl-ordering: logical;
     cursor: text;
-    background-color: field;
-    margin: 0em;
     padding: 1px 2px;
     border-width: 2px;
     border-style: inset;
