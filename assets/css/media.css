@@ -1,18 +1,4 @@
-#lista {
-    height: calc(100vh - 196px);
-    top: 196px;
-}
-
-#lista {
-    height: calc(100vh - 166px);
-    top: 166px;
-}
-.container-botao {
-    /* margin-top: 3rem; */
-}
-
-
-/* Certo */
+/* min-width: 576px */
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -23,36 +9,9 @@
         max-width: 540px;
         display: inherit;
     }
-
-    /* Velho */
-    #btn-mobile {
-        display: block;
-    }
-
-    #lista {
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 108px);
-        top: 108px;
-        right: 0;
-        background-image: linear-gradient(rgb(255, 162, 235), #6ecaff);
-        z-index: 1000;
-        text-align: center;
-    }
-
-    #nav.active #lista {
-        display: block;
-        /* flex-direction: column; */
-    }
-
-    #nav.active #lista li {
-        display: block;
-        /* width: 100%; */
-        margin-top: 20px;
-    }
 }
 
+/* min-width: 768px */
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -63,26 +22,9 @@
         max-width: 540px;
         display: inherit;
     }
-
-    /* Velho */
-    .container-ebook div {
-        flex-direction: column;
-    }
-
-    .container-ebook div embed {
-        width: 95%;
-        height: 650px;
-    }
-
-    .conteudo-ebook {
-        width: 90%;
-    }
-
-    .conteudo-ebook p {
-        margin-top: 40px;
-    }
 }
 
+/* min-width: 992px */
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -95,6 +37,7 @@
     }
 }
 
+/* min-width: 1200px */
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -107,6 +50,7 @@
     }
 }
 
+/* min-width: 1400px */
 @media (min-width: 1400px) {
     .container {
         max-width: 1320px;

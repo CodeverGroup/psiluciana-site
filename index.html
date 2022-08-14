@@ -23,6 +23,8 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: linear-gradient(to top, #ff4d6d, #ff8fa3);">
         <div class="container-columns">
             <div class="d-flex justify-content-center align-items-center" style="padding: 0 1rem; border-right: 2px solid #000000; max-width: 350px;">
@@ -39,25 +41,29 @@
                     <p class="h5">Meus estudos estão mais avançados para queixas que envolvem depressão e ansiedade.</p>    
                 </article>
 
-                <a href="#" target="_blank" class="btn btn-outline-pink">Fale comigo</a>
+                <a href="#" target="_blank" class="btn btn-pink">Fale comigo</a>
             </div>
         </div>
     </section>
     
-    <aside class="container-ebook" id="ebook">
-        <h1>Veja aqui meu e-book sobre ansiedade</h1>
-        <div>
-            <embed src="./assets/files/aprendendo_sobre_a_ansiedade.pdf" type="application/pdf">
-            <div class="conteudo-ebook">
-                <p>
-                    Esse e-book descreve brevemente as características da ansiedade, que é um tema bem relevante nos dias de hoje. Por isso,
-                    eu e minha amiga e parceira de profissão <a target="_blank" id="insta-user-link" href="https://www.instagram.com/psihellorainyrangel/"><i class="fa fa-instagram"> Hellorainy Rangel</i></a>, decidimos elaborar esse conteúdo com algumas informações importantes
-                    sobre o tema para ajudar a esclarecer e responder diversas dúvidas sobre essa questão.
-                </p>
-                <a download="Ebook - Aprendendo sobre a ansiedade.pdf" type="application/pdf" target="_blank" href="./assets/files/Aprendendo sobre a ansiedade.pdf">Faça o <span><strong>download</strong></span> aqui.</a>
+    <!-- Ebook -->
+    <section class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <a href="./assets/files/aprendendo_sobre_a_ansiedade.pdf">
+                <img src="./assets/img/pdf.png" alt="Abrir PDF">
+            </a>
+
+            <div class="container-pdf mx-2">
+                <h2>Veja aqui meu e-book sobre ansiedade</h2>
+
+                <p class="h5 mb-3">Esse e-book descreve brevemente as características da ansiedade, que é um tema bem relevante nos dias de hoje. Por isso,eu e minha amiga e parceira de 
+                    profissão <a href="https://www.instagram.com/psihellorainyrangel/" target="_blank" class="link-text">Hellorainy Rangel</a>, decidimos elaborar esse conteúdo com algumas 
+                    informações importantes sobre o tema para ajudar a esclarecer e responder diversas dúvidas sobre essa questão.</p>
+                
+                <a href="./assets/files/aprendendo_sobre_a_ansiedade.pdf" download="aprendendo_sobre_a_ansiedade.pdf" type="application/pdf" class="btn btn-outline-pink">Faça o download aqui...</a>
             </div>
         </div>
-    </aside>
+    </section>
         
     <aside class="container-botao">
         <a class="botao" target="_blank" href="https://api.whatsapp.com/send?phone='+55022981827116'&text=Olá, estou procurando um psicólogo. Você pode me ajudar?">Enviar uma Mensagem no Whatsapp</a>
