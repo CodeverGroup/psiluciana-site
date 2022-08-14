@@ -19,11 +19,12 @@
 
     <link rel="manifest" href="./assets/site.webmanifest">
 
+    <script defer src="./assets/js/main.js"></script>
+
     <title>Luciana Assis | Psicóloga</title>
 </head>
 
 <body>
-
     <!-- Header -->
     <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: linear-gradient(to top, #ff4d6d, #ff8fa3);">
         <div class="container-columns">
@@ -49,10 +50,6 @@
     <!-- Ebook -->
     <section class="vh-100 d-flex justify-content-center align-items-center">
         <div class="container">
-            <a href="./assets/files/aprendendo_sobre_a_ansiedade.pdf">
-                <img src="./assets/img/pdf.png" alt="Abrir PDF">
-            </a>
-
             <div class="container-pdf mx-2">
                 <h2>Veja aqui meu e-book sobre ansiedade</h2>
 
@@ -62,12 +59,16 @@
                 
                 <a href="./assets/files/aprendendo_sobre_a_ansiedade.pdf" download="aprendendo_sobre_a_ansiedade.pdf" type="application/pdf" class="btn btn-outline-pink">Faça o download aqui...</a>
             </div>
+
+            <a href="./assets/files/aprendendo_sobre_a_ansiedade.pdf">
+                <img src="./assets/img/pdf.png" alt="Abrir PDF">
+            </a>
         </div>
     </section>
 
     <!-- Contato -->
-    <section class="vh-100 d-flex justify-content-center align-items-center" style="background-image: url(https://img.freepik.com/fotos-gratis/mulher-de-negocios-que-fala-a-seu-psicologo_1098-1824.jpg?w=1380&t=st=1660484018~exp=1660484618~hmac=1fbb79c9f0bcca120811553ce877e44b0e23dcdff029a3a99df5b13a4529854f); background-size: cover;">
-        <div class="container-grid p-4" style="background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 4px">
+    <section class="vh-100 d-flex justify-content-center align-items-center" style="background-color: #ff8fa3;">
+        <div class="container-columns p-4" style="background-color: #ffffff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 4px">
             <div class="mx-2 p-4">
                 <article class="mb-2">
                     <h2>Fale comigo</h2>
@@ -107,21 +108,39 @@
         </div>
     </section>
 
-    <footer id="links">
-        <section class="dados">
-            <address class="m-2">
-                <p><span>Cidade:</span> Campos dos Goytacazes/RJ</p>
-                <p><span>Telefone:</span> (22) 98182-7116</p>
-                <p><span>CRP:</span> 05/67308</p>
-            </address>
+    <!-- Contato -->
+    <footer>
+        <div class="container footer">
+            <div class="p-4 d-flex justify-content-evenly" style="width: 100%;">
+                <div>
+                    <h5 class="mb-1">Luciana Assis</h5>
+                    <p>CRP: 05/67308</p>
+                </div>
 
-            <div class="links">
-                <a href="https://www.instagram.com/psi.lucianaassis/" target="_blank" class="link"><i class="fa fa-instagram"></i></a>
-                <a href="" class="link"><i class="fa fa-linkedin"></i></a>
+                <div>
+                    <h5 class="mb-1">Informações</h5>
+                    <p>Campos dos Goytacazes/RJ</p>
+                    <p>(22) 98182-7116</p>
+                </div>
+
+                <div>
+                    <h5 class="mb-1">Mídias Sociais</h5>
+
+                    <div class="d-flex">
+                        <a href="https://www.instagram.com/psi.lucianaassis/" target="_blank" style="padding: 0 1rem;">
+                            <i class="fa fa-instagram" style="font-size: 25pt !important; color: white;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/psi.lucianaassis/" target="_blank" style="padding: 0 1rem;">
+                            <i class="fa fa-linkedin" style="font-size: 25pt !important; color: white;"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <div class="container-copy"><p class="copy">Desenvolvido com <div class="heart">❤</div> por Everton Gonçalves by Cod<span class="codever">Ever</span> Group. Copyright &copy 2021</p></div>
-        <script src="./assets/js/main.js"></script>
+
+            <div style="border-top: 1px solid #ffffff; padding: 0.5rem 1rem 2rem;">
+                <p>Desenvolvido com ❤ por Everton Gonçalves by CodEver Group. Copyright &copy 2021 CodEver Group</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

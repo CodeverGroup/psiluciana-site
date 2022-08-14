@@ -21,13 +21,16 @@ img {
 }
 
 footer {
+    background-color: #2b2b2b;
+    color: #FFF;
+}
+
+.footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2b2b2b;
-    color: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6, span {
@@ -86,7 +89,6 @@ textarea {
 }
 
 /* Classes */
-
 .form-control {
     display: block;
     width: 100%;
@@ -98,8 +100,6 @@ textarea {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     border-radius: .375rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -327,6 +327,10 @@ textarea.form-control {
     justify-content: space-between;
 }
 
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -361,11 +365,4 @@ textarea.form-control {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-}
-
-.container-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    margin: 0 auto;
 }
