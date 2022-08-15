@@ -1,81 +1,65 @@
-const btn = document.getElementById("btn-mobile")
-const menuBtn1 = document.querySelector('.menu-buttom-1')
-const menuBtn2 = document.querySelector('.menu-buttom-2')
-const menuBtn3 = document.querySelector('.menu-buttom-3')
-const menuBtn4 = document.querySelector('.menu-buttom-4')
 
-const submit = document.querySelector('.submit')
-const form = document.getElementById('formContact')
-const alerta = document.querySelector('.container-message-alert')
-
-submit.addEventListener('click', (e) => {
-    const nome = document.getElementById('nome')
-    const telefone = document.getElementById('telefone')
-    const email = document.getElementById('email')
-    const mensagem = document.getElementById('mensagem')
-    console.log(nome)
+(function () {
+    'use strict'
+    const forms = document.getElementById('formContact')
+    const errorField = document.getElementById('message-alert')
     
-    if (nome.value == "" || telefone.value == "" || email.value == "" || mensagem.value == "") {
-        e.preventDefault()
-        console.log("tudo vazio")
-        alerta.classList.add('active')
-        nome.classList.add('alert')
-        telefone.classList.add('alert')
-        email.classList.add('alert')
-        mensagem.classList.add('alert')
-    } else {
-        alerta.classList.remove('active')
-        nome.classList.remove('alert')
-        telefone.classList.remove('alert')
-        email.classList.remove('alert')
-        mensagem.classList.remove('alert')
-    }
-})
+    window.addEventListener('load', () => {
+        var validation = Array.prototype.filter.call(forms, (item) => {
+            if (item.type == 'submit') {
+                item.addEventListener('click', (e) => {
+                    if(checkValidation()) {
+                        errorField.children[0].innerHTML = 'Formulário Enviado!'
+                        errorField.hidden = false
+                    } else {
+                        e.preventDefault()
+                    }
+                })
+            }
+        })
 
-menuBtn1.addEventListener('click', () => {
-    const nav = document.getElementById("nav")
-    if (nav.className.match('active')) {
-        nav.classList.remove('active')
-    }
-})
+        function checkValidation() {
+            var hasValid = true
+            var emptyFields = false
+            var validation = Array.prototype.filter.call(forms, (item) => {
+                if (item.type != 'submit' && item.value == '' ) {
+                    item.classList.add('alert')
+                    item.classList.remove('was-validated')
+                    hasValid = false
+                    emptyFields = true
+                } 
+                else {
 
-menuBtn2.addEventListener('click', () => {
-    const nav = document.getElementById("nav")
-    if (nav.className.match('active')) {
-        nav.classList.remove('active')
-    }
-})
+                    if (item.type == 'tel' && isNaN(item.value)) {
+                        item.classList.add('alert')
+                        item.classList.remove('was-validated')
+                        hasValid = false
+                        item.placeholder = 'Digite apenas números'
+                        item.value = ''
+                        return
+                    }
+                    
+                    if (item.name == 'mensagem' && item.value.length <= 5) {
+                        item.classList.add('alert')
+                        item.classList.remove('was-validated')
+                        hasValid = false
+                        item.placeholder = 'Mensagem muito curta.'
+                        item.value = ''
+                        return
+                    }
 
-menuBtn3.addEventListener('click', () => {
-    const nav = document.getElementById("nav")
-    if (nav.className.match('active')) {
-        nav.classList.remove('active')
-    }
-})
+                    item.classList.remove('alert')
+                    item.classList.add('was-validated')
+                }
+            })  
 
-menuBtn4.addEventListener('click', () => {
-    const nav = document.getElementById("nav")
-    if (nav.className.match('active')) {
-        nav.classList.remove('active')
-    }
-})
-
-btn.addEventListener('click', () => {
-    const nav = document.getElementById("nav")
-    nav.classList.toggle('active')
-})
-
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header')
-    header.classList.toggle('sticky', window.scrollY > 0)
-})
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+            if (emptyFields) {
+                errorField.hidden = false
+            } else {
+                errorField.hidden = true
+            }
+            
+            return hasValid
+        }
+    })
+})()

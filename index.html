@@ -79,7 +79,7 @@
                 <img src="./assets/img/contact.jpg" alt="Contato">
             </div>
 
-            <form action="#" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="mx-2 p-2" id="formContact" style="width: 100%;">
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true" class="mx-2 p-2 needs-validation" id="formContact" style="width: 100%;">
                 <div class="mb-3">
                     <label class="form-label" for="nome">Nome</label>
                     <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome aqui...">
@@ -89,16 +89,16 @@
                     <input type="tel" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone aqui...">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="email">e-Mail</label>
+                    <label class="form-label" for="email">E-mail</label>
                     <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu email aqui...">
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" class="form-control" id="mensagem" rows="4">Escreva sua mensagem aqui...</textarea>
+                    <textarea name="mensagem" class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
                 </div>
 
-                <div class="mb-3">
-                    <span class="message-alert">Existem campos em branco!</span>
+                <div class="mb-3 message-alert" id="message-alert" hidden>
+                    <span class="">Existem campos em branco!</span>
                 </div>
 
                 <div class="mb-3" data-netlify-recaptcha="true"></div>
@@ -140,7 +140,8 @@
             <div style="border-top: 1px solid #ffffff; padding: 0.5rem 1rem 2rem;">
                 <p>Desenvolvido com ❤ por Everton Gonçalves by CodEver Group. Copyright &copy 2021 CodEver Group</p>
             </div>
-        </div>
+        </div>  
     </footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
